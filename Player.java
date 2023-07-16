@@ -1,14 +1,12 @@
-import processing.core.PApplet;
-
 public class Player {
     private int playerid;
     private boolean state;
     private int count;
 
-    public Player(int playerid,boolean state,int count){
-        this.playerid=playerid;
-        this.state=state;
-        this.count=count;
+    public Player(int playerid, boolean state, int count) {
+        this.playerid = playerid;
+        this.state = state;
+        this.count = count;
 
     }
 
@@ -22,5 +20,17 @@ public class Player {
 
     public boolean isState() {
         return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public void setPlayerid(int playerid) {
+        this.playerid = playerid;
     }
 }
